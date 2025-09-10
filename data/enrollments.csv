@@ -1,0 +1,5 @@
+enrollmentId,studentId,courseCode,semester,grade
+E1,S1,CS101,3,A
+E2,S1,CS102,3,B+
+E3,S2,MA101,1,A
+E4,S3,HS101,2,A-
