@@ -3,12 +3,19 @@ package edu.ccrm.cli;
 import edu.ccrm.service.*;
 import edu.ccrm.domain.*;
 import java.util.Scanner;
+import edu.ccrm.io.ImportExportService;
+import edu.ccrm.io.BackupService;
+
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StudentService studentService = new StudentServiceImpl();
         CourseService courseService = new CourseServiceImpl();
+
+        ImportExportService ioService = new ImportExportService();
+        BackupService backupService = new BackupService();
+
 
         int choice;
         do {
@@ -17,7 +24,9 @@ public class Main {
             System.out.println("2. List Students");
             System.out.println("3. Add Course");
             System.out.println("4. List Courses");
-            System.out.println("5. Exit");
+            System.out.println("5. Export Students");
+            System.out.println("6. Backup Exported File");
+            System.out.println("7. Exit");
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
             sc.nextLine(); // consume newline
@@ -52,10 +61,18 @@ public class Main {
                 }
                 case 4 -> courseService.listCourses()
                         .forEach(c -> System.out.println(c.toString()));
-                case 5 -> System.out.println("Exiting...");
+
+                case 5 -> {
+                  ioService.exportStudents(studentService.listStudents(), "data/exported_students.csv");
+                }
+                case 6 -> {
+                  backupService.backupFile("data/exported_students.csv", "backups");
+                }
+                case 7 -> System.out.println("Exiting...");
+                
                 default -> System.out.println("Invalid choice!");
             }
-        } while (choice != 5);
+        } while (choice != 7);
 
         sc.close();
     }

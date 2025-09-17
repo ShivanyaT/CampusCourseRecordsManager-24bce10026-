@@ -25,4 +25,9 @@ public class Student extends Person {
     public String toString() {
         return "Student{" + regNo + ", " + getFullName() + "}";
     }
+
+    public String getregNo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getregNo'");
+    }
 }
