@@ -1,20 +1,20 @@
 # Campus Course Records Manager (CCRM)
 
-## 📌 Overview
-Campus Course Records Manager (CCRM) is a **Java SE console-based application** that demonstrates the use of **Object-Oriented Programming (OOP) concepts** and advanced Java features.  
-It allows management of:
-- Students (add, list, update, deactivate)  
-- Courses (add, list, search, assign instructors)  
-- Enrollments & Grades (record marks, calculate GPA, transcripts)  
-- File operations (import/export, backups, recursion-based utilities)  
+## 📚 Project Summary
+The Campus Course Records Manager (CCRM) is a **Java SE console application** designed to showcase **Object-Oriented Programming (OOP) principles** and advanced Java functionalities. It facilitates management of:
+- **Students**: Add, view, modify, or deactivate student records.
+- **Courses**: Create, list, search, and assign instructors to courses.
+- **Enrollments & Grades**: Track student enrollments, record grades, compute GPAs, and generate transcripts.
+- **File Operations**: Support for data import/export and backup with recursive utilities.
 
-This project was built as part of the **Programming in Java course project**.  
+This project was developed as part of the **Java Programming course** requirements.
 
 ---
 
-## 🚀 How to Run
-1. Compile all Java files:
-   ```sh
+## ▶️ Getting Started
+To run the application:
+1. Compile the Java source files:
+   ```bash
    javac -d out src/edu/ccrm/**/*.java
 
 java -cp out edu.ccrm.cli.Main
@@ -46,9 +46,9 @@ Present – Java 17/21 (LTS, Records, Switch enhancements)
 | **Java EE (Enterprise Edition)** | Web servers & enterprise apps |
 
 JDK vs JRE vs JVM
-JDK (Java Development Kit) → tools for developers (compiler, debugger, libraries)
-JRE (Java Runtime Environment) → runs Java programs, contains JVM + libraries
-JVM (Java Virtual Machine) → engine that executes Java bytecode
+JDK (Java Development Kit) → Includes tools for development (compiler, debugger, libraries).
+JRE (Java Runtime Environment) → Runs Java applications, includes JVM and libraries.
+JVM (Java Virtual Machine) → Executes Java bytecode.
 
 🛠️ Project Setup
 Installation
