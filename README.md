@@ -1,6 +1,6 @@
 # Campus Course Records Manager (CCRM)
 
-## 📚 Project Summary
+## Project Summary
 The Campus Course Records Manager (CCRM) is a **Java SE console application** designed to showcase **Object-Oriented Programming (OOP) principles** and advanced Java functionalities. It facilitates management of:
 - **Students**: Add, view, modify, or deactivate student records.
 - **Courses**: Create, list, search, and assign instructors to courses.
@@ -11,7 +11,7 @@ This project was developed as part of the **Java Programming course** requiremen
 
 ---
 
-## ▶️ Getting Started
+## Getting Started
 To run the application:
 1. Compile the Java source files:
    ```bash
@@ -60,10 +60,10 @@ git clone <your-repo-link>
 cd CampusCourseRecordsManager
 
 Screenshots
-✅ java -version output
-✅ VS Code folder structure
-✅ Running CLI menu in terminal
-✅ Backup folder created
+-> java -version output
+-> VS Code folder structure
+-> Running CLI menu in terminal
+-> Backup folder created
 
 🏗️ OOP & Advanced Concepts Mapping
 | Concept                           | Where Implemented                                        |
